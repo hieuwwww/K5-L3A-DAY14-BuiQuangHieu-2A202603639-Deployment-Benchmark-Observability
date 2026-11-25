@@ -4,11 +4,11 @@
 
 ## Public URL
 
-[TỰ ĐIỀN URL HTTPS sau khi deploy]
+https://k5-l3a-day14-buiquanghieu-2a202603639.onrender.com/
 
 ## Platform
 
-Render (đã chọn; chưa deploy, URL và kết quả dưới đây còn chờ kiểm tra thật).
+Render
 
 ## Hướng dẫn deploy Render (bạn thao tác trên tài khoản của mình)
 
@@ -48,15 +48,16 @@ unset AGENT_API_KEY
 
 ## Environment Variables Set
 
-Sau khi tự đặt trên Dashboard, xác nhận tên biến (không ghi giá trị): `REDIS_URL`, `AGENT_API_KEY`, `ENVIRONMENT`, và nếu có `RATE_LIMIT_PER_MINUTE`, `DAILY_BUDGET_USD`, `MAX_OUTPUT_TOKENS`; `PORT` do Render cấp. Trạng thái: **chưa xác minh trên Render**.
+Tên biến cần xác nhận trên Dashboard (không ghi giá trị): `REDIS_URL`, `AGENT_API_KEY`, `ENVIRONMENT`, và nếu có `RATE_LIMIT_PER_MINUTE`, `DAILY_BUDGET_USD`, `MAX_OUTPUT_TOKENS`; `PORT` do Render cấp.
 
 ## Screenshots
 
-- [ ] `screenshots/dashboard.png` — deployment dashboard (hide secrets)
-- [ ] `screenshots/running.png` — service running
-- [ ] `screenshots/test.png` — HTTP status tests without exposing API key
+- [x] `screenshots/dashboard.png` — deployment dashboard
+- [x] `screenshots/running.png` — service running
+- [x] `screenshots/test.png` — HTTP status tests (no API key value visible)
 
 ## Deployment verification
 
-- Deployment date/time: [TỰ ĐIỀN]
-- HTTP results for `/health`, `/ready`, unauthenticated `/ask`, authenticated `/ask`: [TỰ ĐIỀN actual results]
+- Deployment shown in Render screenshot: Nov 25, 2026, 9:32:27 PM GMT+7 (commit `dcbe191`).
+- HTTP results recorded in `screenshots/test.png`: `/health` 200, `/ready` 200, unauthenticated `/ask` 401, authenticated `/ask` 200.
+- Source: screenshot supplied by the user. These results do not independently verify the dashboard's environment-variable values.
